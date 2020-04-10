@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 import org.gradle.examples.web.Servlet;
 
-public class ServletTest extends Mockito{
+public class TestServlet extends Mockito{
 	@Test
     public void testServlet() throws Exception {
         HttpServletRequest request = mock(HttpServletRequest.class);       

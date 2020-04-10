@@ -17,7 +17,6 @@ repositories {
 }
 
 test {
-	maxParallelForks — default: 1
 	
 }
 

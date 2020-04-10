@@ -24,6 +24,7 @@ public class TestServlet extends Mockito{
         assertTrue(sw.toString().contains("hello, world"));  
 	}
 	
+	// initial concept to make sure Unit Tests could be run
 	@Test
     public void testAlwaysPass() {
         assertTrue(true);

@@ -7,8 +7,10 @@ configurations {
 dependencies {
   provided 'javax.servlet:servlet-api:2.4'
   compile configurations.provided
+  testCompile 'junit:junit:4.8.2'
 }
 
 repositories {
   mavenCentral()
 }
+

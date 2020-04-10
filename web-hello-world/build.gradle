@@ -9,9 +9,22 @@ dependencies {
   provided 'javax.servlet:servlet-api:2.4'
   compile configurations.provided
   testCompile 'junit:junit:4.8.2'
+  testCompile group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
 }
 
 repositories {
   mavenCentral()
 }
 
+test {
+	maxParallelForks — default: 1
+	
+}
+
+//test {
+//   include '**/Test*.*'
+//}
+
+//task integrationTest(type: Test, dependsOn: "test") << {
+//   include '**/IntegrationTest*.*'
+//}

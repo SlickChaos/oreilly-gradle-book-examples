@@ -20,7 +20,7 @@ import org.mockito.MockitoAnnotations;
 //import org.junit.Test;
 //import static org.junit.Assert.*;
 
-public class MyServletTest {
+public class Servlet {
  
   @Mock
   HttpServletRequest request;

@@ -1,4 +1,5 @@
 apply plugin: 'jetty'
+apply plugin: 'java'
 
 configurations {
   provided

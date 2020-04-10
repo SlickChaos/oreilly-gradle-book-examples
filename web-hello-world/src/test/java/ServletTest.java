@@ -45,13 +45,10 @@ public class Servlet {
         String result = sw.getBuffer().toString().trim();
         assertEquals(result, new String("hello, world"));
   }
-}
-
-public class TestMe {
-
-    @Test
-    public void testAlwaysPass() {
-        assertTrue(true);
-    }
+  
+  @Test
+  public void testAlwaysPass() {
+	assertTrue(true);
+  }
 
 }

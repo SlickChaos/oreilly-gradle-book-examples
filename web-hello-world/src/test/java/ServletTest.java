@@ -37,7 +37,7 @@ public class Servlet {
   public void testHelloWorldPrinting() throws IOException, ServletException {
         //StringWriter sw = new StringWriter();
         //PrintWriter pw = new PrintWriter(sw);
-        PrintWriter pw = new PrintWriter();
+        PrintWriter pw = new PrintWriter('');
          
         when(response.getWriter()); //.thenReturn(pw);
  

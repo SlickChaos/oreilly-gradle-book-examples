@@ -46,3 +46,12 @@ public class Servlet {
         assertEquals(result, new String("hello, world"));
   }
 }
+
+public class TestMe {
+
+    @Test
+    public void testAlwaysPass() {
+        assertTrue(true);
+    }
+
+}

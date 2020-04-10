@@ -17,12 +17,8 @@ repositories {
 }
 
 test {
-	
+   include '**/Test*.*'
 }
-
-//test {
-//   include '**/Test*.*'
-//}
 
 //task integrationTest(type: Test, dependsOn: "test") << {
 //   include '**/IntegrationTest*.*'

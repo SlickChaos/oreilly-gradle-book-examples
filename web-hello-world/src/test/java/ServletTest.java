@@ -38,7 +38,7 @@ public class Servlet {
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
         
-        when(response.getWriter().thenReturn(pw);
+        when(response.getWriter()).thenReturn(pw);
  
         Servlet Servlet = new Servlet();
         Servlet.doGet(request, response);

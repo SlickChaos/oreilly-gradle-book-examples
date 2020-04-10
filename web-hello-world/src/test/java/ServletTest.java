@@ -35,19 +35,14 @@ public class Servlet {
 
   @Test
   public void testHelloWorldPrinting() throws IOException, ServletException {
-        //when(request.getParameter("fn")).thenReturn("Vinod");
-        //when(request.getParameter("ln")).thenReturn("Kashyap");
- 
-        StringWriter sw = new StringWriter();
+        //StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
          
-        when(response.getWriter()).thenReturn(pw);
+        when(response.getWriter()); //.thenReturn(pw);
  
-        Servlet Servlet =new Servlet();
+        Servlet Servlet = new Servlet();
         Servlet.doGet(request, response);
         String result = sw.getBuffer().toString().trim();
         assertEquals(result, new String("hello, world"));
-
-	  
   }
 }

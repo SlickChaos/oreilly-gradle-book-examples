@@ -43,8 +43,8 @@ public class Servlet {
          
         when(response.getWriter()).thenReturn(pw);
  
-        MyServlet myServlet =new MyServlet();
-        myServlet.doGet(request, response);
+        Servlet Servlet =new Servlet();
+        Servlet.doGet(request, response);
         String result = sw.getBuffer().toString().trim();
         assertEquals(result, new String("hello, world"));
 

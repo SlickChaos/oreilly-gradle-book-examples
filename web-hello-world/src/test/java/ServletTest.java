@@ -1,18 +1,13 @@
-
 package org.gradle.examples.web;
 
 import static org.junit.Assert.assertTrue; 
 import static org.junit.Assert.fail;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.junit.Test;
 import org.mockito.Mockito;
-
 import org.gradle.examples.web.Servlet;
 
 public class ServletTest extends Mockito{
@@ -26,9 +21,11 @@ public class ServletTest extends Mockito{
         
         when(response.getWriter()).thenReturn(writer);
         new Servlet().doGet(request, response);
-        assertTrue(sw.toString().contains("hello, world"));
-        
+        assertTrue(sw.toString().contains("hello, world"));  
 	}
-
 	
+	@Test
+    public void testAlwaysPass() {
+        assertTrue(true);
+    }
 }

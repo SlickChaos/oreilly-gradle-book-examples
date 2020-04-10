@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 public class HelloWorldTest1 {
   @Test
   public void testHelloWorldPrinting1() {
-      HelloWorld.main(null);
+      Servlet.doGet(null);
       assertTrue(true);
   }
 }

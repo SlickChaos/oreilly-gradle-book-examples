@@ -25,12 +25,16 @@
         }
 		stage('Stage_2_WarFile') {
             steps {
-                dir('web-hello-world') {sh './gradlew '}
+                dir('web-hello-world') {sh './gradlew war'}
             }
 		}
 	}
 	
     post {
+		always {
+            archiveArtifacts artifacts: 'web-hello-world/build/libs/*.war', fingerprint: true
+            junit 'web-hello-world/build/test-results/test/*.xml'
+        }
         failure {
             sendEmail("Failed");
         }

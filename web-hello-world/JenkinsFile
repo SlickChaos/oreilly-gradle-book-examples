@@ -12,7 +12,7 @@
     stages {
 		stage('Stage_1_Build') {
             steps {
-                dir('web-hello-world') {sh './gradlew clean build'}
+                dir('web-hello-world') {sh './gradlew clean test'}
             }
             post {
                 always {

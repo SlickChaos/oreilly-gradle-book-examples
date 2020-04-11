@@ -23,6 +23,11 @@
                 }
             }
         }
+		stage('Stage_2_WarFile') {
+            steps {
+                dir('web-hello-world') {sh './gradlew '}
+            }
+		}
 	}
 	
     post {
